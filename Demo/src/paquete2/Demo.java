@@ -4,20 +4,14 @@
  * and open the template in the editor.
  */
 package paquete2;
-
-
-/**
- *
- * @author reroes
- */
+import paquete3.Informacion;
+import paquete4.Palabra;
 public class Demo {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
+        String cadena = Palabra.obtenerPalabra();
+        int suma = Informacion.obtenerHabitantes();
         
-        // usar printf;
+        System.out.printf("%s, una ciudad llena de arte y naturaleza con %d\n", cadena, suma);
     }
     
 }
