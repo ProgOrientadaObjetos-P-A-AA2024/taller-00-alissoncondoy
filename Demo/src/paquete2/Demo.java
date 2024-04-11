@@ -4,14 +4,16 @@
  * and open the template in the editor.
  */
 package paquete2;
+import paquete1.Mensaje; /* Importamos el paquete 1*/
 import paquete3.Informacion;
-import paquete4.Palabra;
 public class Demo {
     public static void main(String[] args) {
-        String cadena = Palabra.obtenerPalabra();
+        
+        String cadena = Mensaje.obtenerMensaje();
         int suma = Informacion.obtenerHabitantes();
         
-        System.out.printf("%s, una ciudad llena de arte y naturaleza con %d\n", cadena, suma);
+        System.out.printf("%s con %d\n", cadena, suma);
+        /*Llamamos a la clase mensaje */
     }
     
 }
